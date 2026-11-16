@@ -1,0 +1,23 @@
+.sauh2{
+    color: red;
+}
+#sauh2{
+    color: green;
+}
+h2{
+    color: blue;
+}
+
+
+/* @media (max-width: 768px) {
+  body { font-size: 104px; }
+}
+
+@media (min-width: 768px) {
+  body { font-size: 104px; }
+} */
+
+
+/* @media (min-width: 368px) and (max-width:700px) {
+  body { font-size: 104px; }
+} */

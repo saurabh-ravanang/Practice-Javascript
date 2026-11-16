@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  position: relative;
+}
+
+a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+/* Submenu Styling */
+.submenu {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li {
+  width: 200px;
+}
+
+/* Show submenu on hover for desktop */
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+/* Mobile Menu (Hamburger) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-item {
+    display: block;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu.open {
+    display: block;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+  }
+
+  .submenu.open {
+    display: block;
+  }
+
+  .menu-item > a {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
